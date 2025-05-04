@@ -1,0 +1,50 @@
+@import "tailwindcss";
+@plugin "daisyui" {
+    themes: light --default;
+    root: ":root";
+    include: ;
+    exclude: ;
+    prefix: ;
+    logs: true;
+  }
+
+@theme {
+    
+    /* Primary Colors */
+    --color-dark-blue: hsl(233, 26%, 24%);
+    --color-dark-blue-transparent: rgba(45, 49, 77, 0);
+    --color-lime-green:  hsl(136, 65%, 51%);
+    --color-bright-cyan: hsl(192, 70%, 51%);
+
+    /* Nuetral Colors */
+    --color-grayish-blue:  hsl(233, 8%, 62%);
+    --color-light-grayish-blue: hsl(220, 16%, 96%);
+    --color-very-light-gray: hsl(0, 0%, 98%);
+    --color-white: hsl(0, 0%, 100%);
+
+    /* Breakpoints */
+    --breakpoint-mobile: 20.83rem;     /* 375px  */
+    --breakpoint-tablet: 42.66rem;     /* 768px  */
+    --breakpoint-desktop: 80rem;       /* 1440px  */
+    --breakpoint-large: 106.66rem;     /* 1920px  */
+
+    /* Typography */
+    --text-base: 16px;
+    --font-regular: 300;
+    --font-medium: 400;
+    --font-bolder: 700;
+    --font-base-typography: "Public Sans", sans-serif;
+}
+
+@media (min-width: 80rem) {
+    header nav ul li:hover::after {
+        position: absolute;
+        left: 0;
+        bottom: -1.5rem;
+        content: '';
+        width: 100%;
+        height: 3px;
+        background-color: hsl(136, 65%, 51%);
+    }
+}   
+

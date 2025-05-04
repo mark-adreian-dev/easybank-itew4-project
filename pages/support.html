@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-papJmWzcoP5xLe5hKPq3cyu8OEnFvV6CeDcBB6e+EkeUc3c4Y8eIkPStQKUuPSNS7nR97JHFwNC3jN69+yr9UQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="../css/output.css" />
+  <title>Easybank | Support</title>
+</head>
+<body class="font-base-typography bg-white text-base">
+  <div class="flex min-h-screen">
+    <!-- Sidebar -->
+    <aside class="w-64 bg-dark-blue text-white p-6 hidden md:block">
+      <div class="text-2xl font-bold mb-10">
+        <i class="fas fa-university text-lime-green mr-2"></i> Easybank
+      </div>
+      <nav>
+        <ul class="flex flex-col gap-4">
+          <li><a href="dashboard.html" class="hover:text-lime-green"><i class="fas fa-tachometer-alt mr-2"></i> Dashboard</a></li>
+          <li><a href="accounts.html" class="hover:text-lime-green"><i class="fas fa-wallet mr-2"></i> Accounts</a></li>
+          <li><a href="transaction.html" class="hover:text-lime-green"><i class="fas fa-exchange-alt mr-2"></i> Transactions</a></li>
+          <li><a href="payments.html" class="hover:text-lime-green"><i class="fas fa-money-check-alt mr-2"></i> Payments</a></li>
+          <li><a href="transfer.html" class="hover:text-lime-green"><i class="fas fa-random mr-2"></i> Transfer</a></li>
+          <li><a href="cards.html" class="hover:text-lime-green"><i class="fas fa-credit-card mr-2"></i> Cards</a></li>
+          <li><a href="settings.html" class="hover:text-lime-green"><i class="fas fa-cog mr-2"></i> Settings</a></li>
+          <li><a href="support.html" class="text-lime-green"><i class="fas fa-life-ring mr-2"></i> Support</a></li>
+          <li><a href="login.html" class="mt-10 hover:text-lime-green"><i class="fas fa-sign-out-alt mr-2"></i> Logout</a></li>
+        </ul>
+      </nav>
+    </aside>
+
+    <!-- Main Content -->
+    <div class="flex-1 p-4 md:p-8">
+      <header class="md:hidden flex justify-between items-center mb-4">
+        <div class="text-xl font-bold text-dark-blue">
+          <img src="../assets/svg/logo.svg" alt="easy-bank-logo" />
+        </div>
+        <button class="text-dark-blue">
+          <i class="fas fa-bars"></i>
+        </button>
+      </header>
+
+      <section class="mb-8">
+        <h2 class="text-2xl font-bold text-dark-blue mb-6">Support Center</h2>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <!-- Contact Form -->
+          <div class="bg-light-grayish-blue p-6 rounded-2xl shadow">
+            <h3 class="text-lg font-bold text-dark-blue mb-4">Contact Us</h3>
+            <form class="space-y-4">
+              <div>
+                <label class="block text-sm text-dark-blue mb-1">Name</label>
+                <input type="text" class="w-full px-4 py-2 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-lime-500" placeholder="Your name" />
+              </div>
+              <div>
+                <label class="block text-sm text-dark-blue mb-1">Email</label>
+                <input type="email" class="w-full px-4 py-2 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-lime-500" placeholder="you@example.com" />
+              </div>
+              <div>
+                <label class="block text-sm text-dark-blue mb-1">Message</label>
+                <textarea rows="4" class="w-full px-4 py-2 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-lime-500" placeholder="Describe your issue..."></textarea>
+              </div>
+              <button class="bg-lime-green text-white px-6 py-2 rounded-lg hover:bg-lime-600 transition">Submit</button>
+            </form>
+          </div>
+
+          <!-- FAQs -->
+          <div class="bg-light-grayish-blue p-6 rounded-2xl shadow">
+            <h3 class="text-lg font-bold text-dark-blue mb-4">Frequently Asked Questions</h3>
+            <div class="space-y-4 text-sm text-dark-blue">
+              <div>
+                <h4 class="font-semibold">How do I reset my password?</h4>
+                <p class="text-grayish-blue">Go to Settings > Security to update your password securely.</p>
+              </div>
+              <div>
+                <h4 class="font-semibold">Where can I view my transaction history?</h4>
+                <p class="text-grayish-blue">Visit the Transactions page for a full breakdown of recent activity.</p>
+              </div>
+              <div>
+                <h4 class="font-semibold">How can I report suspicious activity?</h4>
+                <p class="text-grayish-blue">Use the contact form to reach our security team directly.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </div>
+  <script src="https://kit.fontawesome.com/1e535aa65b.js" crossorigin="anonymous"></script>
+</body>
+</html>

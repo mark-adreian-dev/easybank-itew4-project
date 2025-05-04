@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-papJmWzcoP5xLe5hKPq3cyu8OEnFvV6CeDcBB6e+EkeUc3c4Y8eIkPStQKUuPSNS7nR97JHFwNC3jN69+yr9UQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="../css/output.css" />
+  <title>Easybank | Dashboard</title>
+</head>
+<body class="font-base-typography bg-white text-base">
+  <div class="flex min-h-screen">
+    <!-- Sidebar -->
+    <aside class="w-64 bg-dark-blue text-white p-6 hidden md:block">
+      <div class="text-2xl font-bold mb-10">
+        <img src="../assets/svg/logo-white.svg" alt="easy-bank-logo" />
+      </div>
+      <nav>
+        <ul class="flex flex-col gap-4">
+          <li><a href="dashboard.html" class="text-lime-green"><i class="fas fa-tachometer-alt mr-2"></i> Dashboard</a></li>
+          <li><a href="accounts.html" class="hover:text-lime-green"><i class="fas fa-wallet mr-2"></i> Accounts</a></li>
+          <li><a href="transaction.html" class="hover:text-lime-green"><i class="fas fa-exchange-alt mr-2"></i> Transactions</a></li>
+          <li><a href="payments.html" class="hover:text-lime-green"><i class="fas fa-money-check-alt mr-2"></i> Payments</a></li>
+          <li><a href="transfer.html" class="hover:text-lime-green"><i class="fas fa-random mr-2"></i> Transfer</a></li>
+          <li><a href="cards.html" class="hover:text-lime-green"><i class="fas fa-credit-card mr-2"></i> Cards</a></li>
+          <li><a href="settings.html" class="hover:text-lime-green"><i class="fas fa-cog mr-2"></i> Settings</a></li>
+          <li><a href="support.html" class="hover:text-lime-green"><i class="fas fa-life-ring mr-2"></i> Support</a></li>
+          <li><a href="login.html" class="mt-10 hover:text-lime-green"><i class="fas fa-sign-out-alt mr-2"></i> Logout</a></li>
+        </ul>
+      </nav>
+    </aside>
+
+    <!-- Main Content -->
+    <div class="flex-1 p-4 md:p-8">
+      <header class="md:hidden flex justify-between items-center mb-4">
+        <div class="text-xl font-bold text-dark-blue">
+          <img src="../assets/svg/logo.svg" alt="easy-bank-logo" />
+        </div>
+        <button class="text-dark-blue">
+          <i class="fas fa-bars"></i>
+        </button>
+      </header>
+
+      <section class="mb-8">
+        <h2 class="text-2xl font-bold text-dark-blue mb-4">Welcome back, John!</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+          <div class="bg-light-grayish-blue rounded-2xl p-6 shadow">
+            <h3 class="text-grayish-blue text-sm font-medium mb-2">Total Balance</h3>
+            <p class="text-2xl font-bold text-dark-blue">
+              <i class="fas fa-wallet text-lime-green mr-2"></i>
+              $12,489.23
+            </p>
+          </div>
+          <div class="bg-light-grayish-blue rounded-2xl p-6 shadow">
+            <h3 class="text-grayish-blue text-sm font-medium mb-2">Savings</h3>
+            <p class="text-2xl font-bold text-dark-blue">
+              <i class="fas fa-piggy-bank text-cyan-500 mr-2"></i>
+              $5,230.00
+            </p>
+          </div>
+          <div class="bg-light-grayish-blue rounded-2xl p-6 shadow">
+            <h3 class="text-grayish-blue text-sm font-medium mb-2">Spending This Month</h3>
+            <p class="text-2xl font-bold text-dark-blue">
+              <i class="fas fa-chart-line text-red-500 mr-2"></i>
+              $1,289.00
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="mb-8">
+        <h3 class="text-xl font-bold text-dark-blue mb-4">Recent Transactions</h3>
+        <div class="bg-white shadow rounded-2xl overflow-hidden">
+          <table class="min-w-full text-left text-sm">
+            <thead class="bg-light-grayish-blue text-grayish-blue">
+              <tr>
+                <th class="py-3 px-6">Date</th>
+                <th class="py-3 px-6">Description</th>
+                <th class="py-3 px-6">Amount</th>
+                <th class="py-3 px-6">Status</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="hover:bg-gray-50">
+                <td class="py-3 px-6">May 1, 2025</td>
+                <td class="py-3 px-6">Grocery Store</td>
+                <td class="py-3 px-6 text-red-500">- $54.90</td>
+                <td class="py-3 px-6 text-green-500"><i class="fas fa-check-circle mr-1"></i> Completed</td>
+              </tr>
+              <tr class="hover:bg-gray-50">
+                <td class="py-3 px-6">May 2, 2025</td>
+                <td class="py-3 px-6">Salary</td>
+                <td class="py-3 px-6 text-green-500">+ $3,000.00</td>
+                <td class="py-3 px-6 text-green-500"><i class="fas fa-check-circle mr-1"></i> Completed</td>
+              </tr>
+              <tr class="hover:bg-gray-50">
+                <td class="py-3 px-6">May 3, 2025</td>
+                <td class="py-3 px-6">Electric Bill</td>
+                <td class="py-3 px-6 text-red-500">- $120.75</td>
+                <td class="py-3 px-6 text-yellow-500"><i class="fas fa-clock mr-1"></i> Pending</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+    </div>
+  </div>
+  <script src="https://kit.fontawesome.com/1e535aa65b.js" crossorigin="anonymous"></script>
+</body>
+</html>

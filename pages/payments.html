@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-papJmWzcoP5xLe5hKPq3cyu8OEnFvV6CeDcBB6e+EkeUc3c4Y8eIkPStQKUuPSNS7nR97JHFwNC3jN69+yr9UQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="../css/output.css" />
+  <title>Easybank | Payments</title>
+</head>
+<body class="font-base-typography bg-white text-base">
+  <div class="flex min-h-screen">
+    <!-- Sidebar -->
+    <aside class="w-64 bg-dark-blue text-white p-6 hidden md:block">
+      <div class="text-2xl font-bold mb-10">
+        <img src="../assets/svg/logo-white.svg" alt="easy-bank-logo" />
+      </div>
+      <nav>
+        <ul class="flex flex-col gap-4">
+          <li><a href="dashboard.html" class="hover:text-lime-green"><i class="fas fa-tachometer-alt mr-2"></i> Dashboard</a></li>
+          <li><a href="accounts.html" class="hover:text-lime-green"><i class="fas fa-wallet mr-2"></i> Accounts</a></li>
+          <li><a href="transaction.html" class="hover:text-lime-green"><i class="fas fa-exchange-alt mr-2"></i> Transactions</a></li>
+          <li><a href="payments.html" class="text-lime-green"><i class="fas fa-money-check-alt mr-2"></i> Payments</a></li>
+          <li><a href="transfer.html" class="hover:text-lime-green"><i class="fas fa-random mr-2"></i> Transfer</a></li>
+          <li><a href="cards.html" class="hover:text-lime-green"><i class="fas fa-credit-card mr-2"></i> Cards</a></li>
+          <li><a href="settings.html" class="hover:text-lime-green"><i class="fas fa-cog mr-2"></i> Settings</a></li>
+          <li><a href="support.html" class="hover:text-lime-green"><i class="fas fa-life-ring mr-2"></i> Support</a></li>
+          <li><a href="login.html" class="mt-10 hover:text-lime-green"><i class="fas fa-sign-out-alt mr-2"></i> Logout</a></li>
+        </ul>
+      </nav>
+    </aside>
+
+    <!-- Main Content -->
+    <div class="flex-1 p-4 md:p-8">
+      <header class="md:hidden flex justify-between items-center mb-4">
+        <div class="text-xl font-bold text-dark-blue">
+          <img src="../assets/svg/logo.svg" alt="easy-bank-logo" />
+        </div>
+        <button class="text-dark-blue">
+          <i class="fas fa-bars"></i>
+        </button>
+      </header>
+
+      <!-- Payments Section -->
+      <section class="mb-8">
+        <h2 class="text-2xl font-bold text-dark-blue mb-4">Payments</h2>
+        <p class="text-grayish-blue mb-6">Manage your bills, transfers, and scheduled payments all in one place.</p>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <!-- Pay Bills -->
+          <div class="bg-light-grayish-blue rounded-2xl p-6 shadow">
+            <h3 class="text-lg font-semibold text-dark-blue mb-2">
+              <i class="fas fa-file-invoice-dollar text-lime-green mr-2"></i> Pay Bills
+            </h3>
+            <p class="text-sm text-grayish-blue mb-4">Settle utility bills, credit dues, and subscriptions.</p>
+            <button class="btn btn-success w-full"><i class="fas fa-bolt mr-2"></i> Pay Now</button>
+          </div>
+
+          <!-- Transfer Funds -->
+          <div class="bg-light-grayish-blue rounded-2xl p-6 shadow">
+            <h3 class="text-lg font-semibold text-dark-blue mb-2">
+              <i class="fas fa-paper-plane text-cyan-500 mr-2"></i> Transfer Funds
+            </h3>
+            <p class="text-sm text-grayish-blue mb-4">Send money to your accounts or others instantly.</p>
+            <button class="btn btn-info w-full"><i class="fas fa-arrow-right-arrow-left mr-2"></i> Transfer</button>
+          </div>
+
+          <!-- Scheduled Payments -->
+          <div class="bg-light-grayish-blue rounded-2xl p-6 shadow">
+            <h3 class="text-lg font-semibold text-dark-blue mb-2">
+              <i class="fas fa-calendar-alt text-yellow-500 mr-2"></i> Scheduled Payments
+            </h3>
+            <p class="text-sm text-grayish-blue mb-4">View and manage upcoming automated payments.</p>
+            <button class="btn btn-warning w-full"><i class="fas fa-calendar-check mr-2"></i> View Schedule</button>
+          </div>
+        </div>
+      </section>
+    </div>
+  </div>
+  <script src="https://kit.fontawesome.com/1e535aa65b.js" crossorigin="anonymous"></script>
+</body>
+</html>
